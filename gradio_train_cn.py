@@ -163,7 +163,7 @@ model_train = gr.Interface(
     clear_btn="清空参数",
     theme=custom_theme,
     allow_flagging='never',  # 禁用 Flag 按钮
-    description="输入各个参数寻来你属于你的controlnet模型"
+    description="输入各个参数训练属于你的controlnet模型"
 )
 
 def process_input(conditioning_image_folder, image_folder, text_folder, output_path):
