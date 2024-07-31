@@ -1,4 +1,4 @@
-![](lib/train.png)
+![](asset/train.png)
 
 <p align="left">
     🌍 EN</a>&nbsp ｜ &nbsp<a href="readme.md">中文</a>&nbsp
@@ -77,14 +77,35 @@ ___
 [![Generic badge](https://img.shields.io/badge/python-3.10-blue.svg)](https://pypi.org/project/pypiserver/) 
 ![CUDA](https://img.shields.io/badge/CUDA-%3E%3D12.1-green.svg)
 ![Linux](https://img.shields.io/badge/Linux-Supported-green.svg)
+![torch](https://img.shields.io/badge/torch-%3E%3D2.3-red.svg)
 
 ### Install
 (Recommended to use conda deployment)
 1. Establish a virtual environment and install dependencies.
-2. Create environment: conda create -- name controlletrain Python=3.10
-3. Activation environment: conda activate control net rain
-4. Install other dependencies: pip install - r requirements. txt
-5. Enter: python gradio_train_cn.py startup page in the terminal
+2. Create environment: ```conda create -- name controlletrain Python=3.10```
+3. Activation environment: ```conda activate control net rain```
+4. Install other dependencies: ```pip install - r requirements. txt```
+5. Enter: ```python gradio_train_cn.py startup page in the terminal```
+6. (Optional)Enter ```pip install xforms``` in the activated environment to enable the memory efficient attention mechanism of xforms
+7. (Note!) diffusers=0.30.0.dev0 is required. If the correct version cannot be downloaded through pip Install, please refer to the following steps:
+    1. cd [ your project root directory folder ]
+    2. Enter ```git clone https://github.com/huggingface/diffusers ``` in the terminal
+    3. cd diffusers
+    4. After activating the environment, enter: ```pip install .```
+
+<br>
+
+Model Training Page：
+![](asset/train.png)
+Parameter guidance page：
+![](asset/Parameter.png)
+Model Conversion Page：
+![](asset/model_converter.png)
+JSON file generation page：
+![](asset/jsonfile.png)
+
+<br>
+
 
 ### ModelDownload
 
@@ -113,6 +134,7 @@ ___
     |-- tokenizer_2
     |-- unet
     |-- vae
+    -- model_index.json
     ```
 3. Model file location
 It can be placed in any path, but for the convenience of management, it is recommended to create relevant files in the training root directory for unified management.
@@ -149,7 +171,7 @@ ___
 
 - controlnet 
   - [x] controlnet
-  - [ ] controlnet_lllite
+  - [x] controlnet_lllite(Lightweight version)
 - Pretrained Model
   - [x] SD15
   - [x] SDXL
@@ -157,6 +179,7 @@ ___
   - [ ] Kolors
 - train
   - [ ] portable standalone build
+  - [ ] More new features (optimizer, parameters, etc.)
 
 <br>
 
@@ -164,10 +187,13 @@ ___
 
 <br>
 
-## contact
+## contact：
 
 <br>
+ai松柏君
 
 📧：aisongbaijun@163.com 
 
-Bilibili：https://space.bilibili.com/523893438?spm_id_from=333.1007.0.0
+X：[![Follow @songbai20](https://img.shields.io/twitter/follow/songbai20?style=social)](https://x.com/songbai20)
+
+B站主页：https://space.bilibili.com/523893438?spm_id_from=333.1007.0.0

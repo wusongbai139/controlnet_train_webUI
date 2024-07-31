@@ -88,7 +88,7 @@ def launch_training(model_type, pretrained_model_path, vae='', controlnet_model=
 
 # 读取Markdown文件内容
 def load_guidance_content():
-    with open("lib/params_guidance.md", "r", encoding="utf-8") as file:
+    with open("asset/params_guidance.md", "r", encoding="utf-8") as file:
         content = file.read()
     return content
 

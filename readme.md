@@ -1,4 +1,4 @@
-![](lib/train.png)
+![](asset/train.png)
 
 <p align="left">
     中文</a>&nbsp ｜ &nbsp<a href="readme_en.md">🌍 EN</a>&nbsp
@@ -77,13 +77,28 @@ ___
 [![Generic badge](https://img.shields.io/badge/python-3.10-blue.svg)](https://pypi.org/project/pypiserver/) 
 ![CUDA](https://img.shields.io/badge/CUDA-%3E%3D12.1-green.svg)
 ![Linux](https://img.shields.io/badge/Linux-Supported-green.svg)
+![torch](https://img.shields.io/badge/torch-%3E%3D2.3-red.svg)
 
 ### 安装依赖（推荐使用conda部署）
 1. 建立虚拟环境+安装依赖。
-2. 建立环境：conda create --name controlnettrain python=3.10
-3. 激活环境：conda activate controlnettrain
-4. 安装其他依赖：pip install -r requirements.txt 
-5. 在终端中输入：python gradio_train_cn.py 启动页面
+2. 建立环境：```conda create --name controlnettrain python=3.10```
+3. 激活环境：```conda activate controlnettrain```
+4. 安装其他依赖：```pip install -r requirements.txt ```
+5. 在终端中输入：```python gradio_train_cn.py``` 启动页面
+6. 在激活的环境中输入：```pip install xformers ``` 启用xformers的内存高效注意力机制
+
+<br>
+
+模型训练页面：
+![](asset/train.png)
+参数指导页面：
+![](asset/Parameter.png)
+模型转换页面：
+![](asset/model_converter.png)
+JSON文件生成页面
+![](asset/jsonfile.png)
+
+<br>
 
 ### 预训练模型下载
 
@@ -148,14 +163,15 @@ ___
 
 - controlnet 
   - [x] controlnet
-  - [ ] controlnet_lllite
+  - [x] controlnet_lllite（轻量版本）
 - Pretrained Model
   - [x] SD15
   - [x] SDXL
   - [ ] SD3
   - [ ] Kolors
 - train
-  - [ ] portable standalone build
+  - [ ] 一键安装包
+  - [ ] 更多新功能（优化器、参数等）
 
 <br>
 
@@ -163,10 +179,13 @@ ___
 
 <br>
 
-## 联系
+## 联系：
 
 <br>
+ai松柏君
 
 📧：aisongbaijun@163.com 
 
-Bilibili：https://space.bilibili.com/523893438?spm_id_from=333.1007.0.0
+X：[![Follow @songbai20](https://img.shields.io/twitter/follow/songbai20?style=social)](https://x.com/songbai20)
+
+B站主页：https://space.bilibili.com/523893438?spm_id_from=333.1007.0.0
